@@ -14,4 +14,5 @@ namespace Application.Computers
             RuleFor(x=>x.ramSlotsNum).GreaterThanOrEqualTo(0);
         }
     }
+    
 }

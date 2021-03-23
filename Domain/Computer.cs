@@ -14,4 +14,5 @@ namespace Domain
         public int quantity{ get;set; }
         public string ExtraProps {get; set; }
     }
+    
 }
