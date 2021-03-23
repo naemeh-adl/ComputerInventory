@@ -63,6 +63,10 @@ export default observer(function ComputerForm() {
       toast.error("Type Should Be Specified!");
       isValid = false;
     }
+    if (Computer.brand.length <= 0) {
+      toast.error("Brand Should Be Specified!");
+      isValid = false;
+    }
     const { usbNum, ramSlotsNum, quantity } = Computer;
     if (usbNum < 0 || !Number.isInteger(Number.parseFloat(usbNum.toString()))) {
       toast.error(
